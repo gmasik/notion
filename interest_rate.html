@@ -1,12 +1,21 @@
 <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget">
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+  <div class="tradingview-widget-container__widget"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
   {
-  "symbol": "ECONOMICS:RUINTR",
-  "width": "100%",
+  "symbols": [
+    {
+      "description": "Месячная инфляция",
+      "proName": "ECONOMICS:RUIRMM"
+    },
+    {
+      "description": "Ключевая ставка ЦБ",
+      "proName": "ECONOMICS:RUINTR"
+    }
+  ],
   "colorTheme": "light",
   "isTransparent": true,
+  "showSymbolLogo": false,
   "locale": "ru"
 }
   </script>
