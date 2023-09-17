@@ -1,0 +1,28 @@
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget">
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+  {
+  "symbols": [
+    {
+      "description": "USD",
+      "proName": "FX_IDC:USDRUB"
+    },
+    {
+      "description": "EUR",
+      "proName": "FX_IDC:EURRUB"
+    },
+    {
+      "description": "CNY",
+      "proName": "FX_IDC:CNYRUB"
+    }
+  ],
+  "showSymbolLogo": true,
+  "colorTheme": "light",
+  "isTransparent": true,
+  "displayMode": "adaptive",
+  "locale": "ru"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
