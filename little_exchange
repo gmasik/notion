@@ -1,0 +1,28 @@
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://ru.tradingview.com/" rel="noopener nofollow" target="_blank">
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+  {
+  "symbols": [
+    {
+      "description": "USD/RUB",
+      "proName": "FX_IDC:USDRUB"
+    },
+    {
+      "description": "EUR/RUB",
+      "proName": "FX_IDC:EURRUB"
+    },
+    {
+      "description": "CNY/RUB",
+      "proName": "FX_IDC:CNYRUB"
+    }
+  ],
+  "colorTheme": "light",
+  "isTransparent": true,
+  "showSymbolLogo": true,
+  "locale": "ru"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
