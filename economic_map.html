@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Economic Map</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      color-scheme: light dark;
+      --tv-widget-accent-color: light-dark(rgba(0, 0, 0, 1), rgba(203, 148, 52, 1));
+      --tv-widget-link-color: light-dark(rgba(0, 0, 0, 1), rgba(203, 148, 52, 1));
+      --tv-widget-hover-background-color: light-dark(#e6e4e3, #141313);
+      --tv-widget-tooltip-background-color: light-dark(#2d2c2a, #e6e4e3);
+      --tv-widget-tooltip-text-color: light-dark(#e6e4e3, #2d2c2a);
+      --tv-widget-focus-outline-color: light-dark(rgba(0, 0, 0, 1), rgba(203, 148, 52, 1));
+      --tv-widget-button-quiet-color-hover: light-dark(#e6e4e3, #2d2c2a);
+      --tv-widget-button-quiet-color-active: light-dark(#d9d7d5, #3b3936);
+      --tv-widget-positive-color: rgba(26, 152, 80, 1);
+      --tv-widget-positive-area-top-color: rgba(26, 152, 80, 0.4);
+      --tv-widget-positive-area-bottom-color: rgba(26, 152, 80, 0.1);
+      --tv-widget-negative-color: rgba(184, 30, 62, 1);
+      --tv-widget-negative-area-top-color: rgba(184, 30, 62, 0.4);
+      --tv-widget-negative-area-bottom-color: rgba(184, 30, 62, 0.1);
+      --tv-widget-scales-font-color: light-dark(#141313, #cdcac8);
+      --tv-widget-attribution-border-color: light-dark(#d9d7d5, #201f1e);
+      --tv-widget-border-color: light-dark(#d9d7d5, #201f1e);
+      --tv-widget-selected-border-color: light-dark(#2d2c2a, #9d9893);
+      --tv-widget-font-family: Monospace;
+      --tv-widget-scale-fill-one: rgba(207, 225, 242, 1);
+      --tv-widget-scale-fill-two: #acc0de;
+      --tv-widget-scale-fill-three: #8aa1ca;
+      --tv-widget-scale-fill-four: #6782b7;
+      --tv-widget-scale-fill-five: #4265a3;
+      --tv-widget-scale-fill-six: rgba(10, 74, 144, 1);
+      --tv-widget-map-empty-fill: light-dark(#e6e4e3, #2d2c2a);
+      --tv-widget-map-hover-stroke-color: light-dark(rgba(0, 0, 0, 1), rgba(203, 148, 52, 1));
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      align-items: stretch;
+    }
+
+    tv-economic-map {
+      flex: 1;
+      width: 100%;
+      min-height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <tv-economic-map></tv-economic-map>
+  <script type="module" src="https://widgets.tradingview-widget.com/w/en/tv-economic-map.js"></script>
+</body>
+</html>
