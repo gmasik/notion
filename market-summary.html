@@ -17,11 +17,11 @@
   --tv-widget-link-color: rgba(203, 148, 52, 1);
   --tv-widget-focus-outline-color: rgba(203, 148, 52, 1);
   --tv-widget-positive-color: rgba(114, 188, 143, 1);
-  --tv-widget-positive-area-top-color: rgba(114, 188, 143, 0.4);
-  --tv-widget-positive-area-bottom-color: rgba(114, 188, 143, 0.1);
+  --tv-widget-positive-area-top-color: rgba(114, 188, 143, 0);
+  --tv-widget-positive-area-bottom-color: rgba(114, 188, 143, 0);
   --tv-widget-negative-color: rgba(233, 115, 102, 1);
-  --tv-widget-negative-area-top-color: rgba(233, 115, 102, 0.4);
-  --tv-widget-negative-area-bottom-color: rgba(233, 115, 102, 0.1);
+  --tv-widget-negative-area-top-color: rgba(233, 115, 102, 0);
+  --tv-widget-negative-area-bottom-color: rgba(233, 115, 102, 0);
   --tv-widget-font-family: Monospace;
   --tv-widget-scale-fill-one: light-dark(rgba(252, 246, 233, 1), rgba(252, 246, 233, 0.5));
   --tv-widget-scale-fill-two: light-dark(#faebd0, #f2e1c799);
@@ -53,7 +53,6 @@
 <body>
   <tv-market-summary
     symbol-sectors='[{"sectionName":"Indices","symbols":["FOREXCOM:SPXUSD","FOREXCOM:DJI","ICMARKETS:STOXX50","SPREADEX:NIKKEI","SSE:000300","RUS:IRUS"]},{"sectionName":"Futures","symbols":["ACTIVTRADES:BRENTQ2026","ACTIVTRADES:NGASN2026","ACTIVTRADES:GASOLN2026","CMCMARKETS:CORNN2026","CMCMARKETS:GOLDQ2026","CMCMARKETS:SILVERN2026"]},{"sectionName":"ElecTech Stocks","symbols":["NASDAQ:AAPL","NASDAQ:NVDA","NASDAQ:INTC","NASDAQ:AMD","NYSE:TSM","NYSE:DELL"]},{"sectionName":"TechServ Stocks","symbols":["NASDAQ:MSFT","NASDAQ:GOOGL","NASDAQ:META","NYSE:IBM","NYSE:SNOW","NYSE:ORCL"]},{"sectionName":"Finance Stocks & Funds","symbols":["NYSE:JPM","NYSE:BAC","NYSE:C","NYSE:BKT","AMEX:VT","NASDAQ:PCPI"]}]'
-    line-chart-type="Line"
     time-frame="7D" 
     show-time-range
     layout-mode="grid"
