@@ -11,27 +11,26 @@
       padding: 1;
     }
 
-    :root {
-      color-scheme: light dark;
-      --tv-widget-accent-color: rgba(203, 148, 52, 1);
-      --tv-widget-link-color: rgba(203, 148, 52, 1);
-      --tv-widget-focus-outline-color: rgba(203, 148, 52, 1);
-      --tv-widget-positive-color: rgba(26, 152, 80, 1);
-      --tv-widget-positive-area-top-color: rgba(26, 152, 80, 0.4);
-      --tv-widget-positive-area-bottom-color: rgba(26, 152, 80, 0.1);
-      --tv-widget-negative-color: rgba(184, 30, 62, 1);
-      --tv-widget-negative-area-top-color: rgba(184, 30, 62, 0.4);
-      --tv-widget-negative-area-bottom-color: rgba(184, 30, 62, 0.1);
-      --tv-widget-selected-border-color: light-dark(rgba(156, 156, 156, 1), #9c9c9c);
-      --tv-widget-font-family: Monospace;
-      --tv-widget-scale-fill-one: light-dark(rgba(203, 148, 52, 0.2), rgba(203, 148, 52, 0.19));
-      --tv-widget-scale-fill-two: light-dark(#cb94345c, #cb94345a);
-      --tv-widget-scale-fill-three: light-dark(#cb943485, #cb943483);
-      --tv-widget-scale-fill-four: light-dark(#cb9434ad, #cb9434ac);
-      --tv-widget-scale-fill-five: #cb9434d6;
-      --tv-widget-scale-fill-six: rgba(203, 148, 52, 1);
-      --tv-widget-map-hover-stroke-color: rgba(203, 148, 52, 1);
-    }
+:root {
+  color-scheme: light dark;
+  --tv-widget-accent-color: light-dark(rgba(223, 171, 0, 1), rgba(203, 148, 52, 1));
+  --tv-widget-link-color: light-dark(rgba(223, 171, 0, 1), rgba(203, 148, 52, 1));
+  --tv-widget-focus-outline-color: light-dark(rgba(223, 171, 0, 1), rgba(203, 148, 52, 1));
+  --tv-widget-positive-color: rgba(114, 188, 143, 1);
+  --tv-widget-positive-area-top-color: rgba(114, 188, 143, 0.4);
+  --tv-widget-positive-area-bottom-color: rgba(114, 188, 143, 0.1);
+  --tv-widget-negative-color: rgba(233, 115, 102, 1);
+  --tv-widget-negative-area-top-color: rgba(233, 115, 102, 0.4);
+  --tv-widget-negative-area-bottom-color: rgba(233, 115, 102, 0.1);
+  --tv-widget-font-family: Monospace;
+  --tv-widget-scale-fill-one: light-dark(rgba(252, 246, 233, 1), rgba(252, 246, 233, 0.5));
+  --tv-widget-scale-fill-two: light-dark(#faebd0, #f2e1c799);
+  --tv-widget-scale-fill-three: light-dark(#f7e1b6, #e7cda5b3);
+  --tv-widget-scale-fill-four: light-dark(#f3d69d, #dcb984cc);
+  --tv-widget-scale-fill-five: light-dark(#efcc84, #cfa664e6);
+  --tv-widget-scale-fill-six: light-dark(rgba(234, 194, 107, 1), rgba(194, 147, 67, 1));
+  --tv-widget-map-hover-stroke-color: light-dark(rgba(223, 171, 0, 1), rgba(203, 148, 52, 1));
+}
 
     html, body {
       width: 100%;
@@ -51,7 +50,6 @@
 <body>
   <tv-ticker-tape
     symbols="OANDA:EURUSD,FX_IDC:USDRUB,FX_IDC:EURRUB,FX_IDC:CHFRUB,FX_IDC:CNYRUB,FX_IDC:RUBAMD,COINBASE:BTCUSD"
-    item-size="compact"
     show-hover
   ></tv-ticker-tape>
   <script type="module" src="https://widgets.tradingview-widget.com/w/en/tv-ticker-tape.js"></script>
