@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ticker Tape</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      color-scheme: light dark;
+      --tv-widget-accent-color: rgba(203, 148, 52, 1);
+      --tv-widget-link-color: rgba(203, 148, 52, 1);
+      --tv-widget-focus-outline-color: rgba(203, 148, 52, 1);
+      --tv-widget-positive-color: rgba(26, 152, 80, 1);
+      --tv-widget-positive-area-top-color: rgba(26, 152, 80, 0.4);
+      --tv-widget-positive-area-bottom-color: rgba(26, 152, 80, 0.1);
+      --tv-widget-negative-color: rgba(184, 30, 62, 1);
+      --tv-widget-negative-area-top-color: rgba(184, 30, 62, 0.4);
+      --tv-widget-negative-area-bottom-color: rgba(184, 30, 62, 0.1);
+      --tv-widget-selected-border-color: light-dark(rgba(156, 156, 156, 1), #9c9c9c);
+      --tv-widget-font-family: Monospace;
+      --tv-widget-scale-fill-one: light-dark(rgba(203, 148, 52, 0.2), rgba(203, 148, 52, 0.19));
+      --tv-widget-scale-fill-two: light-dark(#cb94345c, #cb94345a);
+      --tv-widget-scale-fill-three: light-dark(#cb943485, #cb943483);
+      --tv-widget-scale-fill-four: light-dark(#cb9434ad, #cb9434ac);
+      --tv-widget-scale-fill-five: #cb9434d6;
+      --tv-widget-scale-fill-six: rgba(203, 148, 52, 1);
+      --tv-widget-map-hover-stroke-color: rgba(203, 148, 52, 1);
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+    }
+
+    body {
+      padding: 1px;
+    }
+
+    tv-ticker-tape {
+      display: block;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <tv-ticker-tape
+    symbols="OANDA:EURUSD,FX_IDC:USDRUB,FX_IDC:EURRUB,FX_IDC:CHFRUB,FX_IDC:CNYRUB,FX_IDC:RUBAMD,COINBASE:BTCUSD"
+    item-size="compact"
+    show-hover
+  ></tv-ticker-tape>
+  <script type="module" src="https://widgets.tradingview-widget.com/w/en/tv-ticker-tape.js"></script>
+</body>
+</html>
