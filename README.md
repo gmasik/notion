@@ -1,2 +1,2 @@
 # notion
-notion widgets
+notion embeds
